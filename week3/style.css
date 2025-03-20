@@ -1,0 +1,112 @@
+/* 
+Universal Selection (everything, a whole page)
+
+*{
+    color:hotpink
+} 
+ */
+
+/* css is read from top to bottom
+ the one further down will take precedence
+ the higher rank is the more specific
+ id-class-element */
+
+h1 {
+  color: rgb(11, 94, 92);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  color: rgb(129, 166, 129);
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  color: rgb(212, 162, 88);
+  font-family: "Zilla Slab", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+p1 {
+  font-weight: bold;
+}
+
+section {
+  /* inheritance */
+  text-align: center;
+  border: 1px solid green;
+}
+
+p,
+p1 {
+  font-style: italic;
+  color: rgb(61, 54, 44);
+  font-family: "Zilla Slab", sans-serif;
+  font-weight: 500;
+}
+
+li {
+  color: rgb(104, 76, 125);
+  font-family: "Zilla Slab", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-size: 1.1rem;
+  background-color: rgb(248, 226, 241);
+}
+
+.blue-color {
+  /* class: give some specifc parts a name in html file
+  and use that name in css to style it
+  always start with a dot . before class name
+  for example: if p.class: it means applying the style to that class which found in p - instead of the whole code
+  this is just a name: blue-color (to easy understand) */
+  color: rgb(135, 99, 181);
+}
+
+#outcome {
+  color: rgb(87, 64, 34);
+  border: 2px dashed rgb(255, 179, 0);
+  /* 
+    id comes with #
+    class comes with .
+    give a subject an id name (if only one)
+    use that name in css to style it
+     */
+}
+
+/*
+curly braces {}
+square bracket []
+round bracket ()
+semicolon ;
+colon :
+syntax: rules of the lang
+parantheses <>
+hyphen -
+dot .
+h1, h2, p etc are the selectors
+
+font-family: "TrebuchetMS", Verdana, sans-serif;
+--> add fallback fonts as backup
+one font for heading!
+one font for parapraph!
+serif and san-serif: print media (little decoration) VS digital (don't have decoration at the end - always use sans)
+color
+font-size: 1.5rem; 1 rem = 16 px
+line-height: 1.7;
+text-align
+text-transform
+font-weight
+ */
