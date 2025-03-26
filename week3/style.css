@@ -24,14 +24,14 @@ h2 {
   color: rgb(129, 166, 129);
   font-size: 1.8rem;
   font-weight: 500;
-  font-family: "Zilla Slab", serif;
+  font-family: "Zilla Slab", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 h3 {
   color: rgb(212, 162, 88);
-  font-family: "Zilla Slab", serif;
+  font-family: "Zilla Slab", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
@@ -109,4 +109,10 @@ line-height: 1.7;
 text-align
 text-transform
 font-weight
+
+color
+background-color
+border-color
+border
+
  */
