@@ -1,0 +1,49 @@
+body {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0 auto;
+  /* margin auto */
+  /* horizontal centering - always' make everything centered */
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  width: 400px;
+  border: 1px solid rgb(118, 95, 26);
+  margin: 0 auto;
+  height: 200px;
+  /* min-height: 200px; */
+  /* mininum height is 200, if more content, it'll give more */
+  /* shouldn't give specific height, u can do weight
+  as you're not sure about how much content */
+  /* padding: 30px 10px 50px 20px; */
+  padding: 20px;
+  /* Top Right Bottom Left - order */
+  /* padding is to add some place inside */
+  /* margin is to add space between boxes */
+  margin-bottom: 20px;
+
+  /* line-height: 200px; not the right way */
+  background-color: rgb(254, 248, 230);
+  border-bottom: 3px dashed rgb(95, 68, 10);
+}
+
+.vcenter {
+  line-height: 160px;
+  /* height - top padding - bottom padding */
+  /* 200 - 20 - 20 = 160  */
+}
+/* dot and follow by the name of class */
+
+span {
+  /* just give <span> in a text to change differently */
+  color: rgb(127, 87, 28);
+  /* display: none; --> to hide the text */
+  /* display: block; */
+}
