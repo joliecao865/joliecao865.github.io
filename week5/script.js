@@ -32,6 +32,11 @@ console.log(d);
 // string variable text '' "" `` back tick
 let yourName = "Rohit Ashok Khot";
 console.log("hello", yourName);
+let yourCity = "melbourne";
+let msg = `<h1> I Live in ${yourCity} </h1>
+
+<p> hello this is ${yourName} </p>  `;
+console.log(msg);
 
 //boolean variable
 let isItSunday = false;
@@ -41,8 +46,8 @@ let isOART1013 = true;
 const myStudentRecord = {
   name: "Rohit",
   id: 1234,
-  hometown: "Melbourne",
+  homeTown: "Melbourne",
   isLocal: false,
 };
 console.log(myStudentRecord);
-console.log(myStudentRecord.hometown);
+console.log(myStudentRecord.homeTown);
