@@ -1,5 +1,5 @@
 console.log("Hello");
-console.assert("how are you buddy?");
+console.log("how are you buddy?");
 
 // javascript, above is telling them to print those sentences
 // comments are to document and explain the logic of your code
@@ -11,5 +11,6 @@ console.log("Hello", myName);
 let id = "s1234567";
 console.log("My id is", id);
 
-let myCity = prompt("Where do you live?");
-console.log("I live in", myCity);
+// let myCity = prompt("Where do you live?");
+// console.log("I live in", myCity);
+// this is to ask the user and the user put in the info
