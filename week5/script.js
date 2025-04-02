@@ -6,3 +6,10 @@ console.assert("how are you buddy?");
 
 let myName = "Rohit";
 console.log("Hello", myName);
+myName = "Sarah";
+console.log("Hello", myName);
+let id = "s1234567";
+console.log("My id is", id);
+
+let myCity = prompt("Where do you live?");
+console.log("I live in", myCity);
