@@ -14,3 +14,10 @@ console.log("My id is", id);
 // let myCity = prompt("Where do you live?");
 // console.log("I live in", myCity);
 // this is to ask the user and the user put in the info
+
+let a = 30;
+{
+  let a = 10;
+  console.log("value of a is", a);
+}
+console.log("value of a is", a);
