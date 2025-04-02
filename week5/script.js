@@ -23,10 +23,26 @@ let a = 30;
 console.log("value of a is", a);
 
 // numerical variables 0-9
-let a = 10;
-let b = 20;
-let c = a + b;
-console.log(c);
+let b = 10;
+let c = 20;
+let d = b + c;
+console.log(d);
 // + addition - substraction * multiplication / division
 
-// string variable text '' ""
+// string variable text '' "" `` back tick
+let yourName = "Rohit Ashok Khot";
+console.log("hello", yourName);
+
+//boolean variable
+let isItSunday = false;
+let isOART1013 = true;
+
+//object variables;
+const myStudentRecord = {
+  name: "Rohit",
+  id: 1234,
+  hometown: "Melbourne",
+  isLocal: false,
+};
+console.log(myStudentRecord);
+console.log(myStudentRecord.hometown);
