@@ -1,5 +1,31 @@
-h1 {
+/* As for the font choice, I tried to represent the original website as much as I can. Although I was not sure if Bricolage Grotesque was exactly their font or not but they looked pretty similar so I decided on it. It also looks elegant and suitable for gradient color */
+h1,
+h2,
+h3 {
   font-family: "Bricolage Grotesque", sans-serif;
+  text-align: center;
+  background: -webkit-linear-gradient(#ffffff, hsl(218, 78%, 87%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
   font-weight: 500;
   font-size: 5rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+/* I wanted to bring the theme of Luni, the reviewed website, to my response page so it evokes the sense of familiarity. I analysed the original page a bit to see how the gradient background works. So I applied to mine: a linear gradient that starts at top left (and goes to bottom right) with the shades of blue and violet */
+
+body {
+  background-image: linear-gradient(to bottom right, #9dd1ef, #dfb1f5, #e0c9f4);
 }
