@@ -22,6 +22,14 @@ let a = 30;
 }
 console.log("value of a is", a);
 
+//if conditions
+let grade = 45;
+if (grade > 70) {
+  console.log("Hey you got a HD");
+} else {
+  console.log("You just passed the course");
+}
+
 // numerical variables 0-9
 let b = 10;
 let c = 20;
@@ -37,6 +45,7 @@ let msg = `<h1> I Live in ${yourCity} </h1>
 
 <p> hello this is ${yourName} </p>  `;
 console.log(msg);
+// console.log("hello", yourName + yourCity);
 
 //boolean variable
 let isItSunday = false;
@@ -51,3 +60,11 @@ const myStudentRecord = {
 };
 console.log(myStudentRecord);
 console.log(myStudentRecord.homeTown);
+
+//arrays array start at 0
+let student1 = "Rohit";
+let student2 = "John";
+let student3 = "Melisaa";
+let students = ["Rohit", "John", "Lucy", "Sarah", "Sam"];
+console.log(students);
+console.log(students[2]);
