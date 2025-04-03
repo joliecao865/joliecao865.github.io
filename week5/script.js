@@ -70,14 +70,11 @@ console.log(myStudentRecord.homeTown);
 let student1 = "Rohit";
 let student2 = "John";
 let student3 = "Melisaa";
-let students = ["Rohit", "John", "Lucy", "Sarah", "Sam"];
+let students = ["Rohit", "John", "Lucy", "Sarah", "Sam", "Alice"];
 console.log(students);
 console.log(students[2]);
-function checkWeather() {
-  let myTemp = document.querySelector("#myTemp");
-  google;
-  search;
-  for (the; element; whose) id;
-  is;
-  myTemp;
+// number starts from 0 - so Rohit is 0 and 2 is Lucy
+
+for (let i = 0; i < students.length; i++) {
+  console.log("HELLO", students[i]);
 }
