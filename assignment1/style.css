@@ -1,12 +1,26 @@
+/* I wanted to bring the theme of Luni, the reviewed website, to my response page so it evokes the sense of familiarity. I analysed the original page a bit to see how the gradient background works. So I applied to mine: a linear gradient that starts at top left (and goes to bottom right) with the shades of blue and violet */
+
+body {
+  background-image: linear-gradient(to bottom right, #9dd1ef, #dfb1f5, #e0c9f4);
+}
+
 /* As for the font choice, I tried to represent the original website as much as I can. Although I was not sure if Bricolage Grotesque was exactly their font or not but they looked pretty similar so I decided on it. It also looks elegant and suitable for gradient color */
 h1,
 h2,
 h3 {
   font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   text-align: center;
-  background: -webkit-linear-gradient(#ffffff, hsl(218, 78%, 87%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+  /* set background colour*/
+  background-image: linear-gradient(to bottom, #ffffff, hsl(218, 78%, 87%));
+  /* clip that colour to the shape of the text, but the colour is hidden by the text */
+  /* -webkit-background-clip: text; */
+  background-clip: text;
+  /* so set the text colour to transparent so I can see through it, the gradient one */
+  color: transparent;
 }
 
 h1 {
@@ -16,16 +30,18 @@ h1 {
 
 h2 {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
-h2 {
+h3 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
-/* I wanted to bring the theme of Luni, the reviewed website, to my response page so it evokes the sense of familiarity. I analysed the original page a bit to see how the gradient background works. So I applied to mine: a linear gradient that starts at top left (and goes to bottom right) with the shades of blue and violet */
-
-body {
-  background-image: linear-gradient(to bottom right, #9dd1ef, #dfb1f5, #e0c9f4);
+section {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
 }
