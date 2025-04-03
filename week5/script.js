@@ -78,3 +78,8 @@ console.log(students[2]);
 for (let i = 0; i < students.length; i++) {
   console.log("HELLO", students[i]);
 }
+
+for (let step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4
+  console.log("Taking step no:", step);
+}
