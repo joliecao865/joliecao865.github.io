@@ -41,6 +41,11 @@ console.log(d);
 let yourName = "Rohit Ashok Khot";
 console.log("hello", yourName);
 let yourCity = "melbourne";
+if (yourCity === "perth") {
+  console.log("you are from perth");
+} else {
+  console.log("you are not from perth");
+}
 let msg = `<h1> I Live in ${yourCity} </h1>
 
 <p> hello this is ${yourName} </p>  `;
@@ -68,3 +73,11 @@ let student3 = "Melisaa";
 let students = ["Rohit", "John", "Lucy", "Sarah", "Sam"];
 console.log(students);
 console.log(students[2]);
+function checkWeather() {
+  let myTemp = document.querySelector("#myTemp");
+  google;
+  search;
+  for (the; element; whose) id;
+  is;
+  myTemp;
+}
