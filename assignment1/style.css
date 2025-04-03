@@ -21,6 +21,7 @@ h3 {
   background-clip: text;
   /* so set the text colour to transparent so I can see through it, the gradient one */
   color: transparent;
+  /* display:inline-block; */
 }
 
 h1 {
