@@ -5,15 +5,14 @@ body {
 }
 
 /* As for the font choice, I tried to represent the original website as much as I can. Although I was not sure if Bricolage Grotesque was exactly their font or not but they looked pretty similar so I decided on it. It also looks elegant and suitable for gradient color */
-h1,
-h2,
-h3 {
+h1 {
   font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   text-align: center;
-
   /* set background colour*/
   background-image: linear-gradient(to bottom, #ffffff, hsl(218, 78%, 87%));
   /* clip that colour to the shape of the text, but the colour is hidden by the text */
@@ -24,19 +23,13 @@ h3 {
   /* display:inline-block; */
 }
 
-h1 {
-  font-weight: 500;
-  font-size: 5rem;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
+h2,
 h3 {
-  font-weight: 300;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(67, 39, 62);
+  font-weight: 400;
   font-size: 1rem;
+  text-align: center;
 }
 
 section {
@@ -44,5 +37,10 @@ section {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  text-align: justify;
+  text-align: center;
+  background-color: rgb(251, 242, 247);
+  /* border-spacing: 0; */
+  border-collapse: separate;
+  border-radius: 10px;
+  border: 1px solid black;
 }
