@@ -88,6 +88,28 @@ h3 {
   text-align: center;
 }
 
+.number {
+  font-family: "Source Sans 3", sans-serif;
+  color: rgb(45, 35, 70);
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.title {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: -20px;
+}
+
+/* .title > * {
+  flex: 1;
+} */
+
 section {
   color: #1f0d4f;
   font-family: "Source Sans 3", sans-serif;
@@ -95,24 +117,7 @@ section {
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
-  margin: 50px;
-}
-
-.number {
-  font-family: "Roboto Mono", monospace;
-  color: rgb(45, 35, 70);
-  font-weight: bold;
-  font-size: 3rem;
-  text-align: center;
-}
-
-.title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin: 10px;
-  /* gap: 70px; */
+  /* margin: 50px; */
 }
 
 .question1to4 {
@@ -128,7 +133,7 @@ section {
   border: 1px solid rgb(64, 43, 99);
   margin: auto;
   margin-bottom: 20px;
-  padding: 25px;
+  /* padding: 20px; */
   line-height: 1.5;
 }
 
@@ -157,7 +162,7 @@ li {
   border-radius: 15px;
   border: 1px solid black;
   border-color: rgb(64, 43, 99);
-  margin: 10px;
+  margin: 15px;
   padding: 20px;
   text-align: justify;
 }
@@ -168,6 +173,8 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin: auto;
+  margin-bottom: -15px;
   gap: 5px;
 }
 
