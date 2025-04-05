@@ -9,7 +9,7 @@ h1 {
   margin-top: 40px;
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 500;
-  font-size: 5rem;
+  font-size: 5.5rem;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -33,17 +33,22 @@ h3 {
   text-align: center;
 }
 
+a {
+  color: rgb(236, 244, 255);
+}
+
 section {
   color: #1f0d4f;
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
+  font-size: 1rem;
+  margin: 50px;
 }
 
 .question1to4 {
-  width: 600px;
+  /* width: 650px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,14 +59,29 @@ section {
   border-radius: 15px;
   border: 1px solid black;
   border-color: rgb(64, 43, 99);
-  margin: auto;
-  padding: 20px;
+  margin: 30px 120px 30px 120px;
+  padding: 25px;
   line-height: 1.5;
 }
 
+img {
+  width: 250px;
+  height: 160px;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
+
+li {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .question {
+  text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
+  /* margin: 60px; */
 }
 
 .answer {
@@ -70,7 +90,8 @@ section {
   border: 1px solid black;
   border-color: rgb(64, 43, 99);
   margin: 10px;
-  padding: 20px;/
+  padding: 20px;
+  text-align: justify;
 }
 
 .qa1to4 {
