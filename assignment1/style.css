@@ -6,6 +6,7 @@ body {
 
 /* As for the font choice, I tried to represent the original website as much as I can. Although I was not sure if Bricolage Grotesque was exactly their font or not but they looked pretty similar so I decided on it. It also looks elegant and suitable for gradient color */
 h1 {
+  margin-top: 40px;
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 500;
   font-size: 5rem;
@@ -16,7 +17,7 @@ h1 {
   /* set background colour*/
   background-image: linear-gradient(to bottom, #ffffff, hsl(218, 78%, 87%));
   /* clip that colour to the shape of the text, but the colour is hidden by the text */
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   background-clip: text;
   /* so set the text colour to transparent so I can see through it, the gradient one */
   color: transparent;
@@ -33,14 +34,54 @@ h3 {
 }
 
 section {
+  color: #1f0d4f;
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   text-align: center;
+}
+
+.question1to4 {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: rgb(251, 242, 247);
-  /* border-spacing: 0; */
+  border-spacing: 0;
   border-collapse: separate;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid black;
+  border-color: rgb(64, 43, 99);
+  margin: auto;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.answer {
+  background-color: rgb(251, 242, 247);
+  border-radius: 15px;
+  border: 1px solid black;
+  border-color: rgb(64, 43, 99);
+  margin: 10px;
+  padding: 20px;/
+}
+
+.qa1to4 {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.qa1to4 > * {
+  flex: 1;
 }
