@@ -1,15 +1,42 @@
 /* I wanted to bring the theme of Luni, the reviewed website, to my response page so it evokes the sense of familiarity. I analysed the original page a bit to see how the gradient background works. So I applied to mine: a linear gradient that starts at top left (and goes to bottom right) with the shades of blue and violet */
 
+#header {
+  list-style-type: none;
+  font-family: "Roboto Mono", monospace;
+  color: rgb(67, 39, 62);
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  /* border: 1px solid black; */
+  border-bottom-color: rgb(64, 43, 99);
+  background-color: rgb(250, 242, 253);
+  padding: 7px;
+}
+
+#header > * {
+  flex: 1;
+}
+
+a {
+  color: rgb(133, 70, 150);
+}
+
 body {
   background-image: linear-gradient(to bottom right, #9dd1ef, #dfb1f5, #e0c9f4);
 }
 
 /* As for the font choice, I tried to represent the original website as much as I can. Although I was not sure if Bricolage Grotesque was exactly their font or not but they looked pretty similar so I decided on it. It also looks elegant and suitable for gradient color */
 h1 {
-  margin-top: 40px;
+  margin-top: 30px;
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 500;
-  font-size: 5.5rem;
+  font-size: 8rem;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -24,17 +51,33 @@ h1 {
   /* display:inline-block; */
 }
 
-h2,
+/* h2,
 h3 {
   font-family: "Roboto Mono", monospace;
   color: rgb(67, 39, 62);
   font-weight: 400;
   font-size: 1rem;
   text-align: center;
-}
 
-a {
-  color: rgb(236, 244, 255);
+  At first, I made 3 subheadings but that choice didn't match my design so I moved them on top which now belongs to navigation bar and that also includes a link to the original website too. The header on top with different colour highlights my page better instead of merely one background colour.
+} */
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  color: rgb(67, 39, 62);
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgb(251, 242, 247);
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 15px;
+  border: 1px solid black;
+  border-color: rgb(64, 43, 99);
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 620px;
 }
 
 section {
@@ -48,7 +91,7 @@ section {
 }
 
 .question1to4 {
-  /* width: 650px; */
+  width: 620px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +102,7 @@ section {
   border-radius: 15px;
   border: 1px solid black;
   border-color: rgb(64, 43, 99);
-  margin: 30px 120px 30px 120px;
+  margin: auto;
   padding: 25px;
   line-height: 1.5;
 }
