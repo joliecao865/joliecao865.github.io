@@ -5,7 +5,7 @@
   font-family: "Roboto Mono", monospace;
   color: rgb(67, 39, 62);
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   text-align: center;
 
   display: flex;
@@ -69,14 +69,12 @@ h2 {
   font-size: 1rem;
   text-align: center;
   background-color: rgb(251, 242, 247);
-  border-spacing: 0;
-  border-collapse: separate;
+
   border-radius: 15px;
-  border: 1px solid black;
-  border-color: rgb(64, 43, 99);
+  border: 1px solid rgb(64, 43, 99);
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin: auto;
   width: 620px;
 }
 
@@ -100,9 +98,8 @@ section {
   border-spacing: 0;
   border-collapse: separate;
   border-radius: 15px;
-  border: 1px solid black;
-  border-color: rgb(64, 43, 99);
-  margin: auto;
+  border: 1px solid rgb(64, 43, 99);
+  margin: 25px 120px 25px 120px;
   padding: 25px;
   line-height: 1.5;
 }
