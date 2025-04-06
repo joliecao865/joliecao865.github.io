@@ -1,9 +1,19 @@
-/* I wanted to bring the theme of Luni, the reviewed website, to my response page so it evokes the sense of familiarity. I analysed the original page a bit to see how the gradient background works. So I applied to mine: a linear gradient that starts at top left (and goes to bottom right) with the shades of blue and violet */
-/* To navigate through my page, I aimed for clear vision in styling to not create boredom as its content is all text. I separated all responses into 4 groups with 4 different styles based on the common points and the theme in each group of questions. However, the same thing is all the questions are in bold and bigger font size than the answers, with the great size of the question numbers to highlight the flow of going through each pair of question-answer. 
-Question 1-4 is about my experience when first interact with the website so I created the blog-like style for them with accompanying images. 
-Question 5-8 is much more about deeper explore and research. With 5-6 talking about the website goal and 7-8 about how the website is interacted over time. They remain a bit more formal so I wanted them to be in a same theme. My planning was to make them alike to the letter box and clearly separate the questions and answers. 
-Question 9-11
-Question 12-13 is a space for me to express feelings and experience so I made it like a postcard. With the idea in mind, I tried to think how to make a main shape and came up with the idea of creating a row of dots which have the same colours with the background and overlays on the piece of text, so that it could look like hole punched paper. So I've done this idea from scratch. */
+/* I wanted to bring the theme of Luni, the reviewed website, to my response page so it evokes the sense of familiarity. 
+I analysed the original page a bit to see how the gradient background works. So I applied to mine: a linear gradient that starts at top left (and goes to bottom right) with the shades of blue and violet */
+/* To navigate through my page, I aimed for clear vision in styling to not create boredom as its content is all text. I separated all responses into 4 groups with 4 different styles based on the common points and the theme in each group of questions. 
+However, the same thing is all the questions are in bold and bigger font size than the answers, with the great size of the question numbers to highlight the flow of going through each pair of question-answer. 
+Question 1-4 are about my experience when first interact with the website so I created the blog-like style for them with accompanying images. 
+Question 5-8 are much more about deeper explore and research. With 5-6 talking about the website goal and 7-8 about how the website is interacted over time. They remain a bit more formal so I wanted them to be in a same theme. My planning was to make them alike to the letter box and clearly separate the questions and answers. They also came in a pair each since there were 2 sets of questions which included one to expand the ideas on the other. So I let them be on the same row.
+Question 9-11 mention other media forms so I created another style, which was like the hole punched paper. Always keep the question and answer distinct for a easier reading flow.
+Question 12-13 are a space for me to express feelings and experience so I made it like a postcard. With the idea in mind, I tried to think how to make a main shape and came up with the idea of creating a row of dots which have the same colours with the background and overlays on the piece of text, so that it could look like hole punched paper. So I've done this idea from scratch. */
+/* I tried to remain contrast throughout the page to ensure text is easy to read against the background. */
+/* As for the font choice, because I tried to represent the design of the original website as much as I can so I chose Bricolage Grotesque for the heading. Although I was not sure if it was exactly their font or not but they looked pretty similar so I decided on it. It also looks elegant and suitable for gradient color */
+/* For subheadings which were used on the header and footer and the titles for separating my web parts, I chose Roboto Mono because it is a modern typeface and great readability, especically for only those specific titles. It's clean and good for highlighting and when I wanted to make something different. It's also effective when coming to contrast with the big heading in Bricolage Grotesque.*/
+/* For my main body text, I chose Raleway after changing from Source Sans 3 because even though SS3 was clean to read but way too simple and that went hard to contrast with the rest of the design, especially when the body text occupied almost the page.
+Raleway for me offers the elegant appearance and modernity. It looks good on all of the page, especially going well with my letter-like or postcard-like design. */
+
+/* I included some of my comments below accompanying the code. Some of them were just to explain to myself why I wrote them and some were to archive/document my previous design/choices. */
+
 #header {
   list-style-type: none;
   font-family: "Roboto Mono", monospace;
@@ -34,7 +44,6 @@ body {
   background-image: linear-gradient(to bottom right, #9dd1ef, #dfb1f5, #e0c9f4);
 }
 
-/* As for the font choice, I tried to represent the original website as much as I can. Although I was not sure if Bricolage Grotesque was exactly their font or not but they looked pretty similar so I decided on it. It also looks elegant and suitable for gradient color */
 h1 {
   margin-top: 30px;
   font-family: "Bricolage Grotesque", sans-serif;
@@ -62,7 +71,8 @@ h3 {
   font-size: 1rem;
   text-align: center;
 
-  At first, I made 3 subheadings but that choice didn't match my design so I moved them on top which now belongs to navigation bar and that also includes a link to the original website too. The header on top with different colour highlights my page better instead of merely one background colour.
+  At first, I made 3 subheadings but that choice didn't match my design so I moved them on top which now belongs to navigation bar and that also includes a link to the original website too. 
+  The header on top with different colour highlights my page better instead of merely one background colour. It should be the first strong impression.
 } */
 
 h2 {
@@ -92,6 +102,21 @@ h3 {
   margin: 25px;
 }
 
+/* I used section to set some general styling because they're mostly the same at first place. 
+Then, for each of the number or text part in each question and answer, I identified class/ID to specifically style them if needed, so I won't repeat the common points. */
+
+section {
+  color: #1f0d4f;
+  /* font-family: "Source Sans 3", sans-serif; */
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  text-align: justify;
+  /* margin: 50px; */
+}
+
 .number {
   color: rgb(45, 35, 70);
   font-weight: bold;
@@ -109,20 +134,6 @@ h3 {
   margin-bottom: -20px;
 }
 
-/* I used section to set some general styling because they're mostly the same at first place. Then, for each of the number or text part in each question and answer, I identified class/ID to specifically style them if needed, so I won't repeat the common points. */
-
-section {
-  color: #1f0d4f;
-  /* font-family: "Source Sans 3", sans-serif; */
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  text-align: justify;
-  /* margin: 50px; */
-}
-
 .question1to4 {
   width: 620px;
   display: flex;
@@ -136,8 +147,8 @@ section {
   border: 1px solid rgb(64, 43, 99);
   margin: auto;
   margin-bottom: 20px;
-  /* padding: 20px; */
   line-height: 1.5;
+  /* padding: 20px; */
 }
 
 img {
@@ -157,7 +168,6 @@ li {
   font-weight: bold;
   font-size: 1.1rem;
   line-height: 1.5;
-
   /* margin: 60px; */
 }
 
@@ -187,17 +197,14 @@ li {
 }
 
 .question5to8 {
-  /* width: 400px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: rgb(251, 242, 247);
-  /* border-radius: 15px; */
   border-top-left-radius: 130px;
   border-top-right-radius: 130px;
   border: 1px solid rgb(64, 43, 99);
-  /* padding: 10px; */
   margin: auto;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -221,7 +228,6 @@ li {
   text-align: center;
   border-radius: 50%;
   background-color: rgb(155, 155, 206);
-  /* padding: 12px; */
   width: 350px;
   border: 1px solid rgb(64, 43, 99);
 }
@@ -246,7 +252,6 @@ li {
   align-items: center;
   flex-direction: row;
   margin: auto;
-  /* margin-top: 70px; */
 }
 
 .title911 {
@@ -257,7 +262,6 @@ li {
   flex-direction: row;
   margin: auto;
   background-color: #fffbda;
-  /* background-image: linear-gradient(to bottom right, #6946a6, #e7d5ff, #f8c1e6); */
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border: 1px solid rgb(64, 43, 99);
@@ -283,6 +287,7 @@ li {
   border: 1px dashed rgb(64, 43, 99);
   display: inline-block;
 }
+/* create dots */
 
 .dot-line {
   display: flex;
@@ -291,6 +296,7 @@ li {
   flex-direction: column;
   gap: 15px;
 }
+/* make dots come into a line */
 
 .style911 {
   width: 600px;
@@ -303,10 +309,20 @@ li {
   padding: 25px;
   border: 1px dashed rgb(64, 43, 99);
 }
+/* make dot-line and paragraph being next to each other --> create hole punched paper */
 
 .question9to11 {
   margin: 30px;
 }
+
+#answer12 {
+  z-index: 1;
+}
+#answer13 {
+  z-index: 1;
+}
+/* place the pink paper (paragraph) underneath the dot-row --> create postcard design */
+/* separate them because question 12 and 13 are distinct. otherwise, they stack on each other */
 
 #answer12,
 #answer13 {
@@ -319,14 +335,13 @@ li {
   background-color: rgb(211, 133, 212);
   padding: 40px;
 }
-
-#answer12 {
-  z-index: 1;
+#style12,
+#style13 {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
 }
-
-#answer13 {
-  z-index: 1;
-}
+/* but the style can be the same */
 
 .dot-1 {
   height: 35px;
@@ -347,13 +362,6 @@ li {
   z-index: 2;
   margin: auto;
   margin-top: -16px;
-}
-
-#style12,
-#style13 {
-  width: 600px;
-  margin: auto;
-  margin-top: 20px;
 }
 
 .question12to13 {
