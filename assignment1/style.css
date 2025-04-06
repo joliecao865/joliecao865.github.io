@@ -17,8 +17,7 @@ Question 12-13 is a space for me to express feelings and experience so I made it
   align-items: center;
   flex-direction: row;
 
-  /* border: 1px solid black; */
-  border-bottom-color: rgb(64, 43, 99);
+  border-bottom: 1px solid rgb(64, 43, 99);
   background-color: rgb(250, 242, 253);
   padding: 7px;
 }
@@ -308,34 +307,86 @@ li {
   margin: 30px;
 }
 
-#answer12 {
+#answer12,
+#answer13 {
+  color: #fffbfe;
   width: 590px;
   display: flex;
   justify-content: center;
   margin: auto;
   line-height: 1.5;
-  background-color: rgb(240, 250, 255);
+  background-color: rgb(211, 133, 212);
   padding: 40px;
+}
+
+#answer12 {
   z-index: 1;
-  /* top: 3;
-  left: 3; */
 }
 
 #answer13 {
-  width: 590px;
+  z-index: 1;
+}
+
+.dot-1 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #ccf2ff;
+}
+
+.dot-row {
+  width: 600px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 22px;
+  position: absolute;
+  z-index: 2;
   margin: auto;
-  line-height: 1.5;
-  background-color: rgb(240, 250, 255);
-  padding: 40px;
-  z-index: 1;
-  /* top: 3;
-    left: 3; */
+  margin-top: -16px;
+}
+
+#style12,
+#style13 {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.question12to13 {
+  width: 650px;
+  background-color: #ccf2ff;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+footer {
+  font-family: "Roboto Mono", monospace;
+  color: rgb(67, 39, 62);
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  border-top: 1px solid rgb(64, 43, 99);
+  background-color: rgb(250, 242, 253);
+  padding: 10px;
+  margin-top: 70px;
+}
+
+#footer > * {
+  flex: 1;
 }
 
 /* Because the background is gradient colour so I needed to create different groups of dots to match the colours depending on their positions (area of colour shade) */
-.dot-1 {
+/* .dot-1 {
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -363,31 +414,4 @@ li {
   border-radius: 50%;
   display: inline-block;
   background-color: #e0c2f4;
-}
-
-.dot-row {
-  width: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 22px;
-  position: absolute;
-  z-index: 2;
-  margin: auto;
-  margin-top: -16px;
-}
-
-#style12,
-#style13 {
-  width: 600px;
-  /* height: 400px; */
-  margin: auto;
-  margin-top: 20px;
-  /* padding: 20px; */
-}
-
-/* .dot-row,
-.answer12 {
-  position: absolute;
 } */
