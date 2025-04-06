@@ -86,6 +86,7 @@ h3 {
   font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
+  margin: 25px;
 }
 
 .number {
@@ -193,7 +194,7 @@ li {
   border-top-left-radius: 130px;
   border-top-right-radius: 130px;
   border: 1px solid rgb(64, 43, 99);
-  padding: 25px;
+  padding: 10px;
   line-height: 1.5;
   margin: auto;
   margin-bottom: 20px;
@@ -237,7 +238,7 @@ li {
 
 .title58 {
   width: 350px;
-  height: 150px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
