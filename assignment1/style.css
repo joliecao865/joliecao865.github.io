@@ -317,7 +317,6 @@ li {
   background-color: rgb(240, 250, 255);
   padding: 40px;
   z-index: 1;
-  position: absolute;
   /* top: 3;
   left: 3; */
 }
@@ -331,20 +330,8 @@ li {
   background-color: rgb(240, 250, 255);
   padding: 40px;
   z-index: 1;
-  position: absolute;
   /* top: 3;
     left: 3; */
-}
-
-.paper {
-  width: 590px;
-  height: 590px;
-  display: inline-block;
-  background-color: rgb(56, 155, 204);
-  /* z-index: 1; */
-  position: absolute;
-  z-index: 0;
-  margin: auto;
 }
 
 /* Because the background is gradient colour so I needed to create different groups of dots to match the colours depending on their positions (area of colour shade) */
