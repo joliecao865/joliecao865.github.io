@@ -3,7 +3,7 @@
 Question 1-4 is about my experience when first interact with the website so I created the blog-like style for them with accompanying images. 
 Question 5-8 is much more about deeper explore and research. With 5-6 talking about the website goal and 7-8 about how the website is interacted over time. They remain a bit more formal so I wanted them to be in a same theme. My planning was to make them alike to the letter box and clearly separate the questions and answers. 
 Question 9-11
-It's a space for me to express feelings and experience. */
+Question 12-13 is a space for me to express feelings and experience so I made it like a postcard. With the idea in mind, I tried to think how to make a main shape and came up with the idea of creating a row of dots which have the same colours with the background and overlays on the piece of text, so that it could look like hole punched paper. So I've done this idea from scratch. */
 #header {
   list-style-type: none;
   font-family: "Roboto Mono", monospace;
@@ -307,3 +307,100 @@ li {
 .question9to11 {
   margin: 30px;
 }
+
+#answer12 {
+  width: 590px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  line-height: 1.5;
+  background-color: rgb(240, 250, 255);
+  padding: 40px;
+  z-index: 1;
+  position: absolute;
+  /* top: 3;
+  left: 3; */
+}
+
+#answer13 {
+  width: 590px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  line-height: 1.5;
+  background-color: rgb(240, 250, 255);
+  padding: 40px;
+  z-index: 1;
+  position: absolute;
+  /* top: 3;
+    left: 3; */
+}
+
+.paper {
+  width: 590px;
+  height: 590px;
+  display: inline-block;
+  background-color: rgb(56, 155, 204);
+  /* z-index: 1; */
+  position: absolute;
+  z-index: 0;
+  margin: auto;
+}
+
+/* Because the background is gradient colour so I needed to create different groups of dots to match the colours depending on their positions (area of colour shade) */
+.dot-1 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #dfb4f5;
+}
+.dot-2 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #dfb7f4;
+}
+
+.dot-3 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #dfbdf5;
+}
+.dot-4 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #e0c2f4;
+}
+
+.dot-row {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 22px;
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  margin-top: -16px;
+}
+
+#style12,
+#style13 {
+  width: 600px;
+  /* height: 400px; */
+  margin: auto;
+  margin-top: 20px;
+  /* padding: 20px; */
+}
+
+/* .dot-row,
+.answer12 {
+  position: absolute;
+} */
