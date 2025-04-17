@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Learning to play audio on web</h1>
+    <audio src="airport.mp3" controls id="airport-audio"></audio>
+    <!-- create your own controller interface -->
+    <button id="play-button">Play Audio</button>
+    <!-- add ID for them to make the interaction 
+     of clicking the button to play the audio
+     1st thing to do in javascript: write const -->
+    <button id="pause-button">Pause Audio</button>
+
+    <button id="pop-button">Pop Sound</button>
+    <audio src="pop.mp3" id="pop-sound"></audio>
+    <!-- not add control because just want it to
+     be the feedback mechanism -->
+  </body>
+</html>
