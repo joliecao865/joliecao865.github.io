@@ -1,9 +1,14 @@
+/*  
+Soft colours like pastel blues and greens
+→ Calming and reducing eye strain
+ */
+
 :root {
-  --primary-bg-color: #f4f4f4;
-  --text-color: #333;
-  --main-bg-color: #333;
-  --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
+  --primary-bg-color: #d9efff;
+  --text-color: #101451;
+  --main-bg-color: #c5eabe;
+  --main-text-color: #2b5c4c;
+  --main-btn-bg-color: #a3b5ee;
 }
 
 body,
@@ -14,8 +19,16 @@ ul {
   padding: 0;
 }
 
+li {
+  border-radius: 30px;
+  border: 1px solid #152611;
+  background-color: lab(96.67% -19.9 29.2);
+  padding: 10px;
+  font-weight: 500;
+}
+
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Funnel Display", sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -25,12 +38,26 @@ body {
   justify-content: space-between;
 }
 
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#volumeSlider {
+  width: 150px;
+}
+
 /* Add additional styles as needed */
 
 /* Create a container for the main content */
 .container {
+  border-radius: 15px;
+  border: 1px solid #e4f9e0;
+  background-color: #e4f9e0;
   max-width: 1000px;
-  width: 100%;
+  width: 600px;
   padding: 10px;
 }
 
@@ -41,6 +68,8 @@ header {
   padding: 10px 0;
   text-align: center;
   width: 100%;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /* Navigation styling */
@@ -56,7 +85,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 nav a {
@@ -97,7 +126,7 @@ nav a {
 .progress-bar {
   width: 100%;
   height: 10px;
-  background-color: #ddd;
+  background-color: #96b599;
   margin-top: 10px;
   overflow: hidden;
 }

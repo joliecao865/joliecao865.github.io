@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- add the font family of your choice -->
+    <title>Assignment 2 Interactive Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -12,29 +17,35 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Media Player Website</h1>
+      <h1>FocusTunes</h1>
     </header>
 
     <!-- Navigation Section -->
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
+        <li><a href="#">Standard Play</a></li>
+        <li><a href="#">Focus Mode</a></li>
+        <li><a href="#">Theme</a></li>
         <!-- Add or remove navigation items as needed -->
       </ul>
     </nav>
 
     <!-- Main Content Section -->
     <main class="container">
-      <label>
-        Do you like peas?
-        <input type="checkbox" name="peas" />
-      </label>
       <!-- Media Player Section -->
+      <div class="volume-control">
+        <label for="volumeSlider">Volume:</label>
+        <input
+          type="range"
+          id="volumeSlider"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.5"
+        />
+      </div>
       <div class="media-player">
-        <audio id="custom-video-player" controls loop>
+        <audio id="audioPlayer" controls>
           <source
             src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.ogg"
             type="audio/ogg"
