@@ -71,8 +71,9 @@ function changeVolume() {
 //// ----------------------------------------
 // My logic for Switching between Standard Mode and Focus Mode
 
-// first I need to fetch the button for Focus Mode
-const focusModeButton = document.querySelector("#focusModeButton");
+// first I need to fetch the button for switching to Focus Mode
+const focusModeButton = document.querySelector("#focus-mode-button");
+console.log(focusModeButton);
 
 const standardModeControls = document.querySelector("#standardModeControls");
 const focusModeControls = document.querySelector("#focusModeControls");
@@ -112,8 +113,8 @@ function setupStandardMode() {
   standardModeControls.classList.remove("hidden");
   focusModeControls.classList.add("hidden");
   audio.loop = false;
-  resetFocus();
   focusModeButton.textContent = "Switch to Focus Mode";
+  setupFocusModeButtons(); // Reset button visibility
 }
 
 // Focus Mode Setup
@@ -197,9 +198,7 @@ function resetFocus() {
   timerDisplay.style.fontSize = "3rem"; // Reset font size
   audio.currentTime = 0; // Reset the audio to the start
   audio.pause(); // Ensure audio is paused
-  startFocusButton.classList.remove("hidden");
-  pauseFocusButton.classList.add("hidden");
-  resetFocusButton.classList.add("hidden");
+  setupFocusModeButtons();
 }
 
 function updateDisplay() {
@@ -209,3 +208,6 @@ function updateDisplay() {
     .toString()
     .padStart(2, "0")}`;
 }
+
+// Initialize focus mode button setup
+setupFocusModeButtons();
