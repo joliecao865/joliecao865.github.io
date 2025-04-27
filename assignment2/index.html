@@ -26,8 +26,8 @@
         <li><a href="#">Standard Play</a></li>
         <li><a href="#">Focus Mode</a></li>
         <li><a href="#">Theme</a></li>
-      
       </ul> -->
+
       <button id="focus-mode-button">Switch to Focus Mode</button>
     </nav>
 
@@ -53,8 +53,9 @@
           />
           Your browser does not support the audio element.
         </audio>
-
+        <!-- Standard Mode Section -->
         <section id="standard-mode-controls" class="controls">
+          <!-- With Play/Pause button and Progress Bar -->
           <button id="play-pause-btn">
             <img
               id="play-pause-img"
@@ -68,7 +69,8 @@
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
-          <!-- <button id="loopButton">
+          <!-- I don't think I need the looping for Standard Mode anymore because if the users want to keep replaying, they can go for the Focus Mode. Looping here can be confusing and overlap the main function of Focus mode.
+          <button id="loopButton">
             <img
               id="loop-img"
               src="https://img.icons8.com/?size=100&id=91481&format=png&color=000000"
@@ -79,6 +81,7 @@
           </button> -->
         </section>
 
+        <!-- Focus Mode Section -->
         <section id="focus-mode-controls" class="controls hidden">
           <button id="start-focus-button">Start Focus</button>
           <button id="pause-focus-button" class="hidden">Pause</button>
@@ -87,6 +90,7 @@
           <div id="timer-display">25:00</div>
         </section>
 
+        <!-- Create the Volume Control -->
         <section class="volume-slider">
           <button id="volume-off-btn">
             <img
@@ -97,6 +101,7 @@
               height="24"
             />
           </button>
+          <!-- Volume Slider -->
           <input type="range" id="volume" min="0" max="100" value="50" />
         </section>
       </div>

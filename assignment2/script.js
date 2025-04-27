@@ -6,6 +6,7 @@ const progressBar = document.querySelector("#progress-bar-fill");
 audio.removeAttribute("controls");
 
 // MY FUNCTIONALITIES
+// In general, it is inspired by the Pomodoro Technique but customised for music while being in study session.
 
 //// ----------------------------------------
 // My logic for Muting, Unmuting, and Adjusting Sound
@@ -67,6 +68,7 @@ function changeVolume() {
   volumeOffImg.src =
     "https://img.icons8.com/?size=100&id=reqgj3e1uKBy&format=png&color=000000";
 }
+//// ----------------------------------------
 
 //// ----------------------------------------
 // My logic for Switching between Standard Mode and Focus Mode

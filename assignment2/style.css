@@ -1,7 +1,14 @@
 /*  
-Soft colours like pastel blues and greens
-→ Calming and reducing eye strain
- */
+CHOICE OF COLOUR SCHEME:
+I chose soft colours: pastel blues and greens for the main background as it is calming and reducing eye strain, suitable for the theme of the media player playing music while studying. 
+It is gentle to look at. However, I want to make the web clean and easy to navigate so the buttons are more highlighted, still with the pastel colours, but pink and yellow, so they're separated.
+The basic buttons (play/pause and volume control) are in yellow, distinct from the functionalities of the web - Standard/Focus mode. 
+CHOICE OF FONT:
+I think Funnel Display is simple and clean enough to ensure readability without distraction. It's also impressive to look at.
+CHOICE OF LAYOUT:
+Light, simple, minimalist, pretty, and straightforward with the main media player being in the centre of the page, not too big not too small, still fit in when the users minimise the window and have it on the side - still able to interact with the functionalities as they wish. But it's big and neat enough to display its function clearly.
+It's quick and easy to navigate and interact, which is convenient for relaxing and focusing on study purpose. I aimed for no distractions/confusion and enhancing productivity.
+*/
 
 :root {
   --primary-bg-color: #e1f8ff;
