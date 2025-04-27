@@ -110,20 +110,32 @@ focusModeButton.addEventListener("click", function () {
 
 // Standard Mode Setup
 function setupStandardMode() {
+  clearInterval(timerInterval);
+  currentTimer = focusTime;
+  audio.pause();
+  audio.currentTime = 0;
+  timerDisplay.textContent = "25:00";
+  timerDisplay.style.fontSize = "3rem";
+
   standardModeControls.classList.remove("hidden");
   focusModeControls.classList.add("hidden");
-  audio.loop = false;
   focusModeButton.textContent = "Switch to Focus Mode";
   setupFocusModeButtons(); // Reset button visibility
 }
 
 // Focus Mode Setup
 function setupFocusMode() {
-  standardModeControls.classList.add("hidden");
+  clearInterval(timerInterval);
+  currentTimer = focusTime;
+  audio.pause();
+  audio.currentTime = 0;
+  timerDisplay.textContent = "25:00";
+  timerDisplay.style.fontSize = "3rem";
+
   focusModeControls.classList.remove("hidden");
+  standardModeControls.classList.add("hidden");
   setupFocusModeButtons();
   audio.loop = true;
-  audio.pause();
   focusModeButton.textContent = "Switch to Standard Mode";
 }
 // Standard Mode Controls
