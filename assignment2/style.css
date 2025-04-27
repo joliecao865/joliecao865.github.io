@@ -165,7 +165,7 @@ header {
   display: none;
 }
 
-#timerDisplay {
+#timer-display {
   /* margin-right: 50px; */
   font-size: 3rem;
   font-weight: 550;
