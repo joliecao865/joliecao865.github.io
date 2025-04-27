@@ -86,7 +86,7 @@ const resetFocusButton = document.querySelector("#resetFocusButton");
 const timerDisplay = document.querySelector("#timerDisplay");
 
 let focusTime = 25 * 60; // 25 minutes in seconds
-let currentTimer;
+let currentTimer = focusTime;
 let timerInterval = null; // Track the timer interval
 
 // Start in Standard Mode
@@ -119,8 +119,8 @@ function setupStandardMode() {
 
 // Focus Mode Setup
 function setupFocusMode() {
-  focusModeControls.classList.remove("hidden");
   standardModeControls.classList.add("hidden");
+  focusModeControls.classList.remove("hidden");
   setupFocusModeButtons();
   audio.loop = true;
   audio.pause();
@@ -156,7 +156,7 @@ pauseFocusButton.addEventListener("click", function () {
   if (audio.paused) {
     audio.play();
     pauseFocusButton.textContent = "Pause";
-    startTimer(); // Resume the timer
+    startTimer();
   } else {
     audio.pause();
     clearInterval(timerInterval);
@@ -169,13 +169,15 @@ function startFocusSession() {
   pauseFocusButton.classList.remove("hidden");
   resetFocusButton.classList.remove("hidden");
   pauseFocusButton.textContent = "Pause";
-
+  currentTimer = focusTime; // Reset the timer to ensure it starts from 25 minutes
+  audio.currentTime = 0; // Ensure audio starts from the beginning
   audio.play();
   startTimer();
 }
 
 function startTimer() {
-  clearInterval(timerInterval); // Ensure no other timer is running
+  clearInterval(timerInterval);
+  timerDisplay.style.fontSize = "3rem";
   timerInterval = setInterval(() => {
     if (currentTimer > 0) {
       currentTimer--;
@@ -183,8 +185,12 @@ function startTimer() {
     } else {
       clearInterval(timerInterval);
       audio.pause();
+      audio.currentTime = 0; // Reset audio for when session is complete
       timerDisplay.textContent = "Session Complete!";
-      timerDisplay.style.fontSize = "1.4rem"; // Change font size for completion message
+      timerDisplay.style.fontSize = "1.4rem";
+
+      pauseFocusButton.classList.add("hidden");
+      resetFocusButton.classList.remove("hidden");
     }
   }, 1000);
 }
@@ -192,12 +198,12 @@ function startTimer() {
 resetFocusButton.addEventListener("click", resetFocus);
 
 function resetFocus() {
-  clearInterval(timerInterval); // Clear the interval timer
-  currentTimer = focusTime; // Reset the timer to focusTime
-  timerDisplay.textContent = "25:00"; // Reset the timer display
-  timerDisplay.style.fontSize = "3rem"; // Reset font size
-  audio.currentTime = 0; // Reset the audio to the start
-  audio.pause(); // Ensure audio is paused
+  clearInterval(timerInterval);
+  currentTimer = focusTime;
+  timerDisplay.textContent = "25:00";
+  timerDisplay.style.fontSize = "3rem";
+  audio.currentTime = 0;
+  audio.pause();
   setupFocusModeButtons();
 }
 
