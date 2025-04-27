@@ -121,7 +121,7 @@ function setupFocusMode() {
   focusModeControls.classList.remove("hidden");
   standardModeControls.classList.add("hidden");
   setupFocusModeButtons();
-  audio.loop = false;
+  audio.loop = true;
   audio.pause();
   focusModeButton.textContent = "Switch to Standard Mode";
 }
@@ -183,6 +183,7 @@ function startTimer() {
       clearInterval(timerInterval);
       audio.pause();
       timerDisplay.textContent = "Session Complete!";
+      timerDisplay.style.fontSize = "1.4rem"; // Change font size for completion message
     }
   }, 1000);
 }
@@ -193,6 +194,7 @@ function resetFocus() {
   clearInterval(timerInterval); // Clear the interval timer
   currentTimer = focusTime; // Reset the timer to focusTime
   timerDisplay.textContent = "25:00"; // Reset the timer display
+  timerDisplay.style.fontSize = "3rem"; // Reset font size
   audio.currentTime = 0; // Reset the audio to the start
   audio.pause(); // Ensure audio is paused
   startFocusButton.classList.remove("hidden");
