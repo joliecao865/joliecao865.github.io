@@ -22,18 +22,24 @@
 
     <!-- Navigation Section -->
     <nav>
-      <ul>
+      <!-- <ul>
         <li><a href="#">Standard Play</a></li>
         <li><a href="#">Focus Mode</a></li>
         <li><a href="#">Theme</a></li>
-        <!-- Add or remove navigation items as needed -->
-      </ul>
+      
+      </ul> -->
+      <button id="focusModeButton">Focus Mode</button>
     </nav>
 
     <!-- Main Content Section -->
     <main class="container">
       <!-- Media Player Section -->
       <div class="media-player">
+        <img
+          id="background-img"
+          src="sunset-4086848_1920.jpg"
+          alt="Background image"
+        />
         <audio id="audio-player" controls>
           <source
             src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.ogg"
@@ -46,20 +52,8 @@
           Your browser does not support the audio element.
         </audio>
 
-        <!-- <div class="volume-control">
-            <label for="volumeSlider">Volume:</label>
-            <input
-              type="range"
-              id="volumeSlider"
-              min="0"
-              max="1"
-              step="0.01"
-              value="0.5"
-            />
-          </div> -->
-
-        <section class="custom-controls">
-          <button id="play-pause-btn" onclick="togglePlayPause()">
+        <section id="standardModeControls" class="controls">
+          <button id="play-pause-btn">
             <img
               id="play-pause-img"
               src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
@@ -72,27 +66,37 @@
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
+          <!-- <button id="loopButton">
+            <img
+              id="loop-img"
+              src="https://img.icons8.com/?size=100&id=91481&format=png&color=000000"
+              alt="Loop Button"
+              width="24"
+              height="24"
+            />
+          </button> -->
+        </section>
+
+        <div id="focusModeControls" class="controls hidden">
+          <button id="startFocusButton">Start Focus</button>
+          <button id="pauseFocusButton" class="hidden">Pause</button>
+          <button id="resetFocusButton" class="hidden">Reset Focus</button>
+          <div id="timerDisplay">25:00</div>
+        </div>
+
+        <section class="volume-slider">
+          <button id="volume-off-btn">
+            <img
+              id="volume-off-img"
+              src="https://img.icons8.com/?size=100&id=reqgj3e1uKBy&format=png&color=000000"
+              alt="Volume Off"
+              width="24"
+              height="24"
+            />
+          </button>
+          <input type="range" id="volume" min="0" max="100" value="50" />
         </section>
       </div>
-
-      <section class="volume-slider">
-        <button id="volume-off-btn" onclick="toggleVolumeOff()">
-          <img
-            id="volume-off-img"
-            src="https://img.icons8.com/?size=100&id=reqgj3e1uKBy&format=png&color=000000"
-            alt="Volume Off"
-            width="24"
-            height="24"
-          />
-        </button>
-        <input type="range" id="volume" min="0" max="100" value="50" />
-      </section>
-      <!-- Additional Content Section -->
-      <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
-      </section>
     </main>
 
     <!-- Footer Section -->
