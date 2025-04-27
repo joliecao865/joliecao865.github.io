@@ -4,11 +4,10 @@ Soft colours like pastel blues and greens
  */
 
 :root {
-  --primary-bg-color: #d9efff;
-  --text-color: #101451;
-  --main-bg-color: #c5eabe;
-  --main-text-color: #2b5c4c;
-  --main-btn-bg-color: #a3b5ee;
+  --primary-bg-color: #e1f8ff;
+  --text-color: #415699;
+  --main-bg-color: #c3edba;
+  /* --main-bg-color: #d682af; */
 }
 
 body,
@@ -24,27 +23,30 @@ nav {
   display: flex;
   gap: 30px;
   padding: 10px;
+  margin: 10px;
 }
 
 /* Styling for the buttons with mouse-over effect */
-/* They appear with darker colours so the users understand that they can click on those buttons */
+/* They appear with lighter colours so the users understand that they can click on those buttons */
+/* Same as the pointer as cursor, to convey that they are clickable */
 button {
   border-radius: 40px;
-  border: 1px solid #152611;
-  background-color: lab(82.85% 27.29 -1.51);
+  border: 1px solid #415699;
+  background-color: #f8aed3;
   padding: 10px;
   font-weight: 500;
   cursor: pointer;
-
-  -webkit-appearance: none; /*Override default CSS styles*/
+  color: #415699;
+  /*Override default CSS styles*/
+  -webkit-appearance: none;
   appearance: none;
-  background: #e862a572;
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
-  transition: opacity 0.2s;
-}
-button:hover {
   opacity: 1;
+  -webkit-transition: 0.1s; /* 0.1 second transition on hover */
+  transition: opacity 0.1s;
+}
+/* I set transparency (for mouse-over effects on hover) */
+button:hover {
+  opacity: 0.8;
 }
 
 /* General styling */
@@ -62,17 +64,19 @@ body {
 /* Create a container for the main content */
 .container {
   border-radius: 15px;
-  border: 1px solid #e4f9e0;
-  background-color: #e4f9e0;
+  border: 1px solid #869e82;
+  /* background-color: #e4f9e0; */
+  background-color: #e1fde2;
   max-width: 1000px;
-  width: 600px;
-  padding: 10px;
+  width: 500px;
+  padding: 20px;
+  margin: 10px;
 }
 
 /* Header styling */
 header {
   background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  color: #285a48;
   padding: 5px 0;
   text-align: center;
   width: 100%;
@@ -83,11 +87,10 @@ header {
 /* Media player styling */
 .media-player {
   width: 100%;
-  margin: 0 auto;
 }
 
-.media-player video {
-  max-width: 100%;
+#background-img {
+  width: 100%;
 }
 
 /* Styling for the Volume Slider with mouse-over effect */
@@ -96,8 +99,8 @@ header {
   appearance: none;
   width: 40%;
   height: 5px;
-  background: #dba5c072;
-  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  background: #fdd7ea;
+  opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
   transition: opacity 0.2s;
   cursor: pointer;
@@ -111,8 +114,8 @@ header {
   cursor: pointer;
   display: flex;
   align-items: center;
-  border: 1px solid #152611;
-  background-color: lab(82.85% 27.29 -1.51);
+  background-color: #fefabd;
+  border: 1px solid #65603d;
 }
 
 .volume-slider {
@@ -121,18 +124,23 @@ header {
   align-items: center;
   flex-direction: row;
   gap: 20px;
-  margin: 20px;
+  margin: 15px;
   cursor: pointer;
 }
 
 /* Styling for the Progress bar control */
 
+#play-pause-btn {
+  border: none;
+  background-color: #fefabd;
+  border: 1px solid #65603d;
+}
 .controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  margin-top: 10px;
+  gap: 1.1rem;
+  margin-top: 15px;
   width: 100%;
   cursor: pointer;
 }
@@ -140,8 +148,7 @@ header {
 .progress-bar {
   width: 100%;
   height: 10px;
-  background-color: #ecb6d172;
-  margin-top: 10px;
+  background-color: #fdd7ea;
   overflow: hidden;
 }
 
@@ -159,9 +166,11 @@ header {
 }
 
 #timerDisplay {
-  font-size: 5rem;
+  /* margin-right: 50px; */
+  font-size: 3rem;
+  font-weight: 550;
+  color: #415699;
   font-family: "Funnel Display", sans-serif;
-  color: #152611;
 }
 
 /* Footer styling */
@@ -171,6 +180,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   width: 100%;
+  margin-top: 30px;
 }
 
 /* Navigation styling */
