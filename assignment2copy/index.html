@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2 Interactive Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>FocusTunes</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+      <!-- <ul>
+        <li><a href="#">Standard Play</a></li>
+        <li><a href="#">Focus Mode</a></li>
+        <li><a href="#">Theme</a></li>
+      </ul> -->
+
+      <button id="focus-mode-button">Switch to Focus Mode</button>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="container">
+      <!-- Media Player Section -->
+      <div class="media-player">
+        <figure>
+          <img
+            id="media-player-img"
+            src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGRqamhnbXIwaHN0ZWlxanhzaHFwZnN2N3NtbWFiaGFnOXpkeWR6byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohze1y2AJUOHiid8I/giphy.gif"
+            alt="Media player image"
+          />
+        </figure>
+        <audio id="audio-player" controls>
+          <source
+            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.ogg"
+            type="audio/ogg"
+          />
+          <source
+            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3"
+            type="audio/mpeg"
+          />
+          Your browser does not support the audio element.
+        </audio>
+        <!-- Standard Mode Section -->
+        <section id="standard-mode-controls" class="controls">
+          <!-- With Play/Pause button and Progress Bar -->
+          <button id="play-pause-btn">
+            <img
+              id="play-pause-img"
+              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+              alt="Play Button"
+              width="24"
+              height="24"
+            />
+          </button>
+          <!-- add the missing buttons or functionality here -->
+          <div class="progress-bar">
+            <span id="progress-bar-fill"></span>
+          </div>
+          <!-- I don't think I need the looping for Standard Mode anymore because if the users want to keep replaying, they can go for the Focus Mode. Looping here can be confusing and overlap the main function of Focus mode.
+          <button id="loopButton">
+            <img
+              id="loop-img"
+              src="https://img.icons8.com/?size=100&id=91481&format=png&color=000000"
+              alt="Loop Button"
+              width="24"
+              height="24"
+            />
+          </button> -->
+        </section>
+
+        <!-- Focus Mode Section -->
+        <section id="focus-mode-controls" class="controls hidden">
+          <button id="start-focus-button">Start Focus</button>
+          <button id="pause-focus-button" class="hidden">Pause</button>
+          <button id="reset-focus-button" class="hidden">Reset Focus</button>
+          <!-- I want to make the Focus Mode with default 25-minute session like Pomodoro for one study session. The media player is clean and simple as it should be and there should not be options to operate too much. I want it to display this only one session and then when they know the session is over, they can either take a break or start a new one as they wish -->
+          <div id="timer-display">25:00</div>
+        </section>
+
+        <!-- Create the Volume Control -->
+        <section class="volume-slider">
+          <button id="volume-off-btn">
+            <img
+              id="volume-off-img"
+              src="https://img.icons8.com/?size=100&id=reqgj3e1uKBy&format=png&color=000000"
+              alt="Volume Off"
+              width="24"
+              height="24"
+            />
+          </button>
+          <!-- Volume Slider -->
+          <input type="range" id="volume" min="0" max="100" value="50" />
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
+      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+    </footer>
+  </body>
+</html>

@@ -25,6 +25,9 @@ ul {
   padding: 0;
 }
 
+body {
+  background-image: url("sunset-4086848_1920.jpg");
+}
 /* Navigation Styling */
 nav {
   display: flex;
