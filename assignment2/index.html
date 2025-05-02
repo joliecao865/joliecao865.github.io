@@ -17,7 +17,7 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>FocusTunes</h1>
+      <!-- <h1>FocusTunes</h1> -->
     </header>
 
     <!-- Navigation Section -->
@@ -37,9 +37,9 @@
       <div class="media-player">
         <figure>
           <img
-            id="background-img"
-            src="sunset-4086848_1920.jpg"
-            alt="Background image"
+            id="media-player-img"
+            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGRqamhnbXIwaHN0ZWlxanhzaHFwZnN2N3NtbWFiaGFnOXpkeWR6byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohze1y2AJUOHiid8I/giphy.gif"
+            alt="Media Player Image"
           />
         </figure>
         <audio id="audio-player" controls>
@@ -54,9 +54,9 @@
           Your browser does not support the audio element.
         </audio>
         <!-- Standard Mode Section -->
-        <section id="standard-mode-controls" class="controls">
+        <section id="standard-mode-controls" class="standard-controls">
           <!-- With Play/Pause button and Progress Bar -->
-          <button id="play-pause-btn">
+          <button id="play-pause-btn" class="function-button">
             <img
               id="play-pause-img"
               src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
@@ -82,7 +82,7 @@
         </section>
 
         <!-- Focus Mode Section -->
-        <section id="focus-mode-controls" class="controls hidden">
+        <section id="focus-mode-controls" class="focus-controls hidden">
           <button id="start-focus-button">Start Focus</button>
           <button id="pause-focus-button" class="hidden">Pause</button>
           <button id="reset-focus-button" class="hidden">Reset Focus</button>
@@ -92,7 +92,7 @@
 
         <!-- Create the Volume Control -->
         <section class="volume-slider">
-          <button id="volume-off-btn">
+          <button id="volume-off-btn" class="function-button">
             <img
               id="volume-off-img"
               src="https://img.icons8.com/?size=100&id=reqgj3e1uKBy&format=png&color=000000"
@@ -109,11 +109,30 @@
 
     <!-- Footer Section -->
     <footer>
-      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
       <a href="https://icons8.com/icon/59862/play">Play</a> icon by
       <a href="https://icons8.com">Icons8</a>
       <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
       <a href="https://icons8.com">Icons8</a>
+      Image by
+      <a
+        href="https://pixabay.com/users/wpquadrosemolduras-13495262/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5039388"
+        >Wallace Pires</a
+      >
+      from
+      <a
+        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5039388"
+        >Pixabay</a
+      >
+      Image by
+      <a
+        href="https://pixabay.com/users/levanevsky-8336355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4086848"
+        >Demetros</a
+      >
+      from
+      <a
+        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4086848"
+        >Pixabay</a
+      >
     </footer>
   </body>
 </html>

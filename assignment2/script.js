@@ -101,9 +101,6 @@ let focusTime = 25 * 60; // 25 minutes in seconds
 let currentTimer = focusTime;
 let timerInterval = null; // to manage the timer interval, then can clear intervals and avoid overlapping timers
 
-// The media player starts with Standard Mode as default for convenient main use (then can be switched)
-setupStandardMode();
-
 // When switching to Focus Mode, the only button I want to display is "Start"
 // It simplifies user operations and enhances the efficiency of the Focus Mode function of the media player for studying purpose - minimalist
 // So I hide the Pause and Reset buttons until the timer starts - clean and reduces distraction, only highlights main functions
@@ -124,6 +121,50 @@ focusModeButton.addEventListener("click", function () {
   }
 });
 
+//-------------------
+
+// Set up Change Background and Image between modes
+// First I fetch the image
+const mediaPlayerImage = document.querySelector("#media-player-img");
+console.log(mediaPlayerImage);
+// When switching to Focus Mode, listen to click
+// focusModeButton.addEventListener("click", changeFocusImage);
+// // The illustration image for the media player will be changed to fit the context
+// function changeFocusImage() {
+//   document.body.style.background =
+//     "url('https://pixabay.com/photos/rainbow-sky-landscape-clouds-5039388/')";
+//   mediaPlayerImage.src =
+//     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHltODJ3dWxndmpncXR3NWlqYTA3ODhlYzIzNHltcnN4M3cxcDBqdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6XX4V0O8a0xdS/giphy.gif";
+// }
+
+//--------------//
+
+// NEED TO WORK ON!!!  ---------------
+// focusModeButton.addEventListener("click", () => changeMode("focus"));
+// standardModeButton.addEventListener("click", () => changeMode("standard"));
+
+// function changeMode(mode) {
+//   if (mode === "focus") {
+//     // Change image for focus mode
+//     if (mediaPlayerImage) {
+//       mediaPlayerImage.src =
+//         "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHltODJ3dWxndmpncXR3NWlqYTA3ODhlYzIzNHltcnN4M3cxcDBqdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6XX4V0O8a0xdS/giphy.gif";
+//     }
+//     // Change background for focus mode
+//     document.body.style.backgroundImage =
+//       "url('https://pixabay.com/photos/rainbow-sky-landscape-clouds-5039388/')";
+//   } else if (mode === "standard") {
+//     // Change image for standard mode
+//     if (mediaPlayerImage) {
+//       mediaPlayerImage.src =
+//         "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGRqamhnbXIwaHN0ZWlxanhzaHFwZnN2N3NtbWFiaGFnOXpkeWR6byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohze1y2AJUOHiid8I/giphy.gif"; // Replace with actual URL
+//     }
+//     // Change background for standard mode
+//     document.body.style.backgroundImage = "url('sunset-4086848_1920.jpg')";
+//   }
+// }
+// -----------------
+
 // To set up Standard Mode
 function setupStandardMode() {
   // ensure audio stops completely when switching between modes
@@ -141,6 +182,30 @@ function setupStandardMode() {
   setupFocusModeButtons();
   // This to make sure even when I switch to Focus Mode while playing on Standard mode and then I switch back to Standard, everything is set as initially, with the Play button ready to be clicked on
   playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
+  document.body.style.backgroundImage = "url('sunset-4086848_1920.jpg')";
+  mediaPlayerImage.src =
+    "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGRqamhnbXIwaHN0ZWlxanhzaHFwZnN2N3NtbWFiaGFnOXpkeWR6byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohze1y2AJUOHiid8I/giphy.gif";
+
+  // And change the container and buttons colours as well when switching to Standard mode
+  document.querySelectorAll(".container").forEach((container) => {
+    container.style.backgroundColor = "#e6efcc"; // Standard mode color
+  });
+  document.querySelectorAll("button").forEach((button) => {
+    button.style.backgroundColor = "#f6d0e4"; // Standard mode button color
+    button.style.borderColor = "#c2909e"; // Standard mode border color
+  });
+  document.querySelectorAll(".function-button").forEach((button) => {
+    button.style.backgroundColor = "#3b8c66"; // Function button color
+    button.style.borderColor = "#749988"; // Function button border color
+  });
+
+  document.querySelectorAll("#volume").forEach((button) => {
+    button.style.backgroundColor = "#f6d0e4"; // Function button color
+  });
+
+  document.querySelector("header").style.backgroundColor = "#f2dcb3";
+  document.querySelector("footer").style.backgroundColor = "#f2dcb3";
+  console.log("Switched to Standard Mode");
 }
 
 // To set up Focus Mode
@@ -160,6 +225,33 @@ function setupFocusMode() {
   audio.loop = true;
   // This button appears so users can switch to Standard Mode from Focus Mode
   focusModeButton.textContent = "Switch to Standard Mode";
+  mediaPlayerImage.src =
+    "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHltODJ3dWxndmpncXR3NWlqYTA3ODhlYzIzNHltcnN4M3cxcDBqdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6XX4V0O8a0xdS/giphy.gif";
+  document.body.style.background = "url('rainbow-5039388_1280.jpg')";
+
+  // And change the container and buttons colours as well when switching to Focus mode
+  document.querySelectorAll(".container").forEach((container) => {
+    container.style.backgroundColor = "#EDE1BA"; // Focus mode color
+  });
+  document.querySelectorAll("button").forEach((button) => {
+    button.style.backgroundColor = "#D9BF71"; // Light green for focus
+    button.style.color = "#145932"; // Text color
+    button.style.borderColor = "#B6B28B";
+  });
+
+  document.querySelectorAll(".function-button").forEach((button) => {
+    button.style.backgroundColor = "#657557"; // Light green for focus
+    button.style.borderColor = "#B6B28B";
+  });
+
+  document.querySelectorAll("#volume").forEach((button) => {
+    button.style.backgroundColor = "#BFC491"; // Function button color
+  });
+
+  // And change the colour for Header and Footer when switching to Focus Mode
+
+  document.querySelector("header").style.backgroundColor = "#F5D179";
+  document.querySelector("footer").style.backgroundColor = "#F5D179";
 }
 
 // My logic for Standard Mode Controls
