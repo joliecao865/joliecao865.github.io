@@ -1,36 +1,40 @@
 /*  
-CHOICE OF COLOUR SCHEME:
-I chose soft colours: pastel blues and greens for the main background as it is calming and reducing eye strain, suitable for the theme of the media player playing music while studying. 
-It is gentle to look at. However, I want to make the web clean and easy to navigate so the buttons are more highlighted, still with the pastel colours, but pink and yellow, so they're separated.
-The basic buttons (play/pause and volume control) are in yellow, distinct from the functionalities of the web - Standard/Focus mode. 
+CHOICE OF COLOUR SCHEME AND BACKGROUND:
+I chose sky pictures as the web background to make it impressive instead of only coloured background. It also gives relaxing vibes on a bigger platform instead of using them as the small illustration images.
+I chose soft colours as the theme as it is calming and reducing eye strain, suitable for the theme of the media player playing music while studying. 
+The colour scheme of Focus Mode is darker but more "significant" than the Standard Mode to let the users lock in to the mode of focusing, it's deeper. 
+I extracted the colours from both background images and GIF on each Mode to make it relatable and harmonious
+It is gentle to look at. However, I want to make the web clean and easy to navigate so the buttons are more highlighted, it's stronger, so they're separated.
+The basic buttons (play/pause and volume control) are distinct from the functionalities of the web - Standard/Focus mode (remain the style even when switching modes - different choice of colours)
+
 CHOICE OF FONT:
 I think Funnel Display is simple and clean enough to ensure readability without distraction. It's also impressive to look at.
+
 CHOICE OF LAYOUT:
+The main function area is small enough to be visible still when the user minimises the tab. It also looks like the ipod, which is handy and looks neat and compact.
 Light, simple, minimalist, pretty, and straightforward with the main media player being in the centre of the page, not too big not too small, still fit in when the users minimise the window and have it on the side - still able to interact with the functionalities as they wish. But it's big and neat enough to display its function clearly.
 It's quick and easy to navigate and interact, which is convenient for relaxing and focusing on study purpose. I aimed for no distractions/confusion and enhancing productivity.
+I made header and footer because it looks empty without them.
 */
 
 :root {
   --primary-bg-color: #e1f8ff;
   --text-color: #f3fee4;
   --main-bg-color: #f2dcb3;
-  /* --main-bg-color: #d682af; */
-}
-
-body,
-h1,
-p,
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 /* I made the image as background now as the feedback I got because it looks much better and gives the relaxing vibes */
-
+/* And I found the transition is essential when it gives a feeling of entering the zone of focus - they're going to experience something different. It also creates a blend in colour of the sky instead of viewing it too instant */
 body {
   background-image: url("sunset-4086848_1920.jpg");
-  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 1s ease-in-out;
+}
+
+#media-player-img {
+  transition: 1s ease-in-out;
 }
 
 /* Navigation Styling */
@@ -64,6 +68,7 @@ button:hover {
   opacity: 0.8;
 }
 
+/* I want the buttons with text have different colours from the buttons for Play/Pause/Volume */
 .function-button {
   border: none;
   background-color: #3b8c66;

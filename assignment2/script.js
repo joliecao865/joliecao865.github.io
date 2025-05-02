@@ -186,23 +186,30 @@ function setupStandardMode() {
   mediaPlayerImage.src =
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGRqamhnbXIwaHN0ZWlxanhzaHFwZnN2N3NtbWFiaGFnOXpkeWR6byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohze1y2AJUOHiid8I/giphy.gif";
 
-  // And change the container and buttons colours as well when switching to Standard mode
+  // And change the container colour as well when switching to Standard mode
   document.querySelectorAll(".container").forEach((container) => {
-    container.style.backgroundColor = "#e6efcc"; // Standard mode color
+    container.style.backgroundColor = "#e6efcc";
   });
+
+  // And change the buttons (with texts) colours as well when switching to Standard mode
   document.querySelectorAll("button").forEach((button) => {
-    button.style.backgroundColor = "#f6d0e4"; // Standard mode button color
-    button.style.borderColor = "#c2909e"; // Standard mode border color
+    button.style.backgroundColor = "#f6d0e4"; //button colour
+    button.style.borderColor = "#c2909e"; //border colour
+    button.style.color = "#824355"; //text colour
   });
+
+  // And change the Play/Pause and Volume buttons colours as well when switching to Standard mode
   document.querySelectorAll(".function-button").forEach((button) => {
-    button.style.backgroundColor = "#3b8c66"; // Function button color
-    button.style.borderColor = "#749988"; // Function button border color
+    button.style.backgroundColor = "#3b8c66"; //button colour
+    button.style.borderColor = "#749988"; //border colour
   });
 
+  // Change the colour of the Volume Slider
   document.querySelectorAll("#volume").forEach((button) => {
-    button.style.backgroundColor = "#f6d0e4"; // Function button color
+    button.style.backgroundColor = "#f6d0e4";
   });
 
+  // Change the colour of Header and Footer
   document.querySelector("header").style.backgroundColor = "#f2dcb3";
   document.querySelector("footer").style.backgroundColor = "#f2dcb3";
   console.log("Switched to Standard Mode");
@@ -227,23 +234,26 @@ function setupFocusMode() {
   focusModeButton.textContent = "Switch to Standard Mode";
   mediaPlayerImage.src =
     "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHltODJ3dWxndmpncXR3NWlqYTA3ODhlYzIzNHltcnN4M3cxcDBqdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6XX4V0O8a0xdS/giphy.gif";
-  document.body.style.background = "url('rainbow-5039388_1280.jpg')";
+  document.body.style.background = "url('rainbow-5039388_1920.jpg')";
 
-  // And change the container and buttons colours as well when switching to Focus mode
+  // And change the container colour as well when switching to Focus mode
   document.querySelectorAll(".container").forEach((container) => {
-    container.style.backgroundColor = "#EDE1BA"; // Focus mode color
+    container.style.backgroundColor = "#DFD5B1";
   });
+  // And change the buttons (with text) colour as well when switching to Focus mode
   document.querySelectorAll("button").forEach((button) => {
-    button.style.backgroundColor = "#D9BF71"; // Light green for focus
-    button.style.color = "#145932"; // Text color
-    button.style.borderColor = "#B6B28B";
+    button.style.backgroundColor = "#D9BF71"; //button colour
+    button.style.color = "#145932"; //text colour
+    button.style.borderColor = "#B6B28B"; //border colour
   });
 
+  // And change the Play/Pause and Volume buttons colours as well when switching to Focus mode
   document.querySelectorAll(".function-button").forEach((button) => {
-    button.style.backgroundColor = "#657557"; // Light green for focus
+    button.style.backgroundColor = "#657557";
     button.style.borderColor = "#B6B28B";
   });
 
+  // Change the colour of the Volume Slider
   document.querySelectorAll("#volume").forEach((button) => {
     button.style.backgroundColor = "#BFC491"; // Function button color
   });
