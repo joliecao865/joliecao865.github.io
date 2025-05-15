@@ -19,4 +19,7 @@ dropbox.addEventListener("drop", function (e) {
   const clone = draggedCard;
   //   dropbox.innerHTML = clone; it not work
   dropbox.appendChild(clone);
+  clone.addEventListener("click", function () {
+    clone.classList.add("flip");
+  });
 });
