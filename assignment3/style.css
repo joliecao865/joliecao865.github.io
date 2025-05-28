@@ -1,0 +1,39 @@
+h1 {
+  margin-top: 30px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-align: center;
+}
+
+.fruit-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  justify-items: center;
+  margin: 20px 100px 100px 100px;
+}
+
+img:hover {
+  scale: 1.1;
+}
+
+img {
+  cursor: pointer;
+  display: flex;
+  justify-items: center;
+}
