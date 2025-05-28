@@ -1,3 +1,17 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  /* justify-content: center; */
+  /* height: 100vh; */
+  /* margin: 0; */
+  transition: background-image 0.5s ease-in-out; /* Smooth transition for background change */
+}
+
 h1 {
   margin-top: 30px;
   font-family: "Bricolage Grotesque", sans-serif;
@@ -22,18 +36,51 @@ h2 {
 
 .fruit-gallery {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   justify-items: center;
   margin: 20px 100px 100px 100px;
 }
 
-img:hover {
+.fruit:hover {
   scale: 1.1;
+  cursor: pointer;
 }
 
-img {
-  cursor: pointer;
-  display: flex;
-  justify-items: center;
+.fruit {
+  width: 60%;
+  transition: transform 0.3s, opacity 0.3s; /* Smooth size and opacity changes */
 }
+
+#pick-another {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute; /* Position it relative to the viewport */
+  bottom: 10px; /* Place at the bottom of the display area */
+  right: 10px; /* Align it to the right */
+  display: none; /* Initially hidden */
+}
+#pick-another:hover {
+  scale: 0.9;
+}
+
+#prompt {
+  display: none;
+  opacity: 0.4;
+  text-align: center;
+  margin-bottom: 800px;
+  transition: opacity 0.3s;
+  /* align-items: center; */
+}
+
+/* #display-area {
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
